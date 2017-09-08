@@ -22,8 +22,10 @@
 	<ul>
 		<li>
 			 {{ $task->tache_non_faite }}
-			 <form action="/delete{{$task->id}}" method="post">
+			 <form action="/delete/{{$task->id}}" method="post">
 			 	<button type="submit" class="">supprimer</button>
+			 	{{csrf_field()}}
+			 	{{method_field('DELETE')}}
 			</form>
 		</li>
 	</ul>

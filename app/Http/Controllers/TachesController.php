@@ -16,7 +16,8 @@ class TachesController extends Controller
     }
 
     public function delete($id){
+    	//die( "le numéro à supprimer est : " . $id );
     	Task::find($id)->delete();
-
+    	return 'ok ?';
     }
 }
