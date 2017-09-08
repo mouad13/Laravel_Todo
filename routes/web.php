@@ -25,3 +25,5 @@ Route::get('/form', function () {
 Route::post('/koko', 'TachesController@lolo');
 
 Route::delete('/delete/{id}', 'TachesController@delete');
+
+Route::put('/modif/{id}', 'TachesController@updateTask');
