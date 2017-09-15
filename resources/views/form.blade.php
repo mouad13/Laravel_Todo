@@ -24,7 +24,7 @@
 
 			<td>
 				<form action="/delete/{{$task->id}}" method="post">
-					<button type="submit" class="">supprimer</button>
+					<button type="submit" class="btn btn-danger">supprimer</button>
 					{{csrf_field()}}
 					{{method_field('DELETE')}}
 				</form>
